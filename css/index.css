@@ -1,12 +1,14 @@
 body {
 	font-family: 'PT Sans Narrow', sans-serif;
-	background-image: url(../img/index.jpg);
 	background-repeat: no-repeat;
 	background-color: white; 
 }
 .container {
-	margin-left: 70px;
-    margin-right: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1160px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .logo {
 	display: inline-block;
@@ -26,7 +28,10 @@ body {
 .header {
 	background-color: #eeeeee;
 }
-.menu__li {
+.header__up {
+    display: inline-block;
+}
+.menu__item {
     display: inline-block;
     margin-right: 15px;
 }
@@ -74,6 +79,39 @@ body {
 	color: black;
 	text-transform: uppercase;
 	margin-right: 20px;
+}
+.content__item {
+    display: inline-block;
+}
+.content__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 50px;
+    color: black;
+}
+.content__info {
+    background-color: #eeeeee;
+    text-align: center;
+    height: 230px;
+    width: 325px;
+    display: none;
+}
+.content__name {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+.content__description {
+    color: #666666;
+    padding-bottom: 15px;
+}
+.content__price {
+    background-color: #fb565a;
+    text-transform: uppercase;
+    color: white;
 }
 button {
     background-color: #eeeeee;
@@ -154,17 +192,21 @@ button {
     display: inline-block;
     width: 700px;
 }
-.discript-p-main {
+.discript__main {
     font-weight: bold;
     font-size: 30px;
     padding-top: 80px;
 }
-.discript-p-second {
+.discript__add {
     padding-bottom: 45px;
 
 }
-.advantages__list {
+.advantages__list-first, .advantages__list-second, .advantages__list-third {
     display: inline-block;
+    margin-right: 100px;
+}
+.advantages__list-third {
+    margin-right: 0px;
 }
 .second-button {
     background-color: #00ca74;
@@ -188,21 +230,21 @@ button {
 .advantages__list-text {
     padding-bottom: 25px;
 }
-hr {
+.line {
     width: 89%;
     background-color: #eeeeee;
     margin-top: 80px;
     margin-bottom: 90px;
 }
-.news__about {
+.studio__about {
     font-weight: bold;
     font-size: 45px;
 }
-.news-h3 {
+.studio-h3 {
     padding-top: 25px;
     padding-bottom: 15px;
 }
-.news-li {
+.studio-li {
     padding-bottom: 20px;
     text-decoration: none;
 }
@@ -210,21 +252,19 @@ li:before {
     border: 2px solid #fb565a;
 
 }
-.news-first {
-    float: left;
+.studio__left, .studio__right {
+    display: inline-block;
 }
-.news-second {
-    float: right;
-}
-.news-second-detail {
+
+.studio-second-detail {
     display: inline-block;
     margin-right: 30px;
 }
-.news-second-percent {
+.studio-second-percent {
     font-weight: bold;
     font-size: 40px;
 }
-.news-second-percent span {
+.studio-second-percent span {
     vertical-align: super;
     font-size: 20px;
 }
@@ -253,4 +293,7 @@ li:before {
 }
 .last {
     border: none;
+}
+.networks__friens {
+    font-weight: bold;
 }

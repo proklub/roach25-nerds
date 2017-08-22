@@ -4,8 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Nerds</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -15,12 +14,12 @@
 				<div class="logo">
 					<img src="img/logo.png" alt="">
 				</div>
-				<div class="header__up menu">
+				<div class="header__up">
 					<ul class="menu__list">
-						<li class="menu__li"><a class="menu__link" href="">Студия</a></li>
-						<li class="menu__li"><a class="menu__link" href="">Клиенты</a></li>					   
-						<li class="menu__li"><a class="menu__link" href="">Магазин</a></li>
-						<li class="menu__li"><a class="menu__link" href="">Контакты</a></li>
+						<li class="menu__item"><a class="menu__link" href="">Студия</a></li>
+						<li class="menu__item"><a class="menu__link" href="">Клиенты</a></li>					   
+						<li class="menu__item"><a class="menu__link" href="">Магазин</a></li>
+						<li class="menu__item"><a class="menu__link" href="">Контакты</a></li>
 					</ul>		
 				</div>
 				<div class="basket">
@@ -33,7 +32,7 @@
 		</div>
 	</header>
 	</section>
-	<section id="content">
+	<section id="content" class="content">
 		<div class="container">
 			<div class="row">
 				<div class="content__form">
@@ -41,33 +40,63 @@
 
 					<form action="">
 						<p><b>Сетка:</b></p>
-						   <input type="radio" name="grid" value="adaptive">Адаптивная<Br>
-						   <input type="radio" name="grid" value="fixed">Фиксированная<Br>
-						   <input type="radio" name="grid" value="rubber">Резиновая<Br>
-					</form>
-					<form action="">
+						   <label><input type="radio" name="grid" value="adaptive">Адаптивная<Br></label>
+						   <label><input type="radio" name="grid" value="fixed">Фиксированная<Br></label>
+						   <label><input type="radio" name="grid" value="rubber">Резиновая<Br></label>
 						<p><b>Особенности:</b></p>
-						   <input type="checkbox" name="features" value="slider">Слайдер<Br>
-						   <input type="checkbox" name="features" value="advantage block">Блок преимуществ<Br>
-						   <input type="checkbox" name="features" value="news">Новости<Br>
-						   <input type="checkbox" name="features" value="galery">Галерея<Br>
-						   <input type="checkbox" name="features" value="basket">Корзина<Br>
-					</form>
+						   <label><input type="checkbox" name="features" value="slider">Слайдер<Br></label>
+						   <label><input type="checkbox" name="features" value="advantage block">Блок преимуществ<Br></label>
+						   <label><input type="checkbox" name="features" value="news">Новости<Br></label>
+						   <label><input type="checkbox" name="features" value="galery">Галерея<Br></label>
+						   <label><input type="checkbox" name="features" value="basket">Корзина<Br></label>
 					<button>Показать</button>
+					</form>
 				</div>
 				<div class="content__example">
 					<h2>Сортировать:</h2>
-					<ul class="content__ul">
-						<li class="content__li"><a href="">По цене</a></li>
-						<li class="content__li"><a href="">По типу</a></li>
-						<li class="content__li"><a href="">По названию</a></li>
+					<div class="content__block">
+					<ul class="content__list">
+						<li class="content__item"><a href="" class="content__link">По цене</a></li>
+						<li class="content__item"><a href="" class="content__link">По типу</a></li>
+						<li class="content__item"><a href="" class="content__link">По названию</a></li>
 					</ul>
+					</div>
 					<a href=""><img src="img/sedona.jpg" alt=""></a>
+					<div class="content__info">
+						<h3 class="content__name">Sedona</h3>
+						<p class="content__description">Информационный сайт<br> для туристов</p>
+						<button class="content__price">9 900 руб.</button>
+					</div>
 					<a href=""><img src="img/pink.jpg" alt=""></a>
+					<div class="content__info">
+						<h3 class="content__name">Pink app</h3>
+						<p class="content__description">Продуктовый лендинг<br> приложения для iOS и Android</p>
+						<button class="content__price">9 900 руб.</button>
+					</div>
 					<a href=""><img src="img/barbershop.jpg" alt=""></a>
+					<div class="content__info">
+						<h3 class="content__name">Barbershop</h3>
+						<p class="content__description">Сайт салона красоты.<br> Для мужчин, да</p>
+						<button class="content__price">9 900 руб.</button>
+					</div>
 					<a href=""><img src="img/mishka.jpg" alt=""></a>
+					<div class="content__info">
+						<h3 class="content__name">Mishka</h3>
+						<p class="content__description">Интернет-магазин<br> вязаных игрушек</p>
+						<button class="content__price">9 900 руб.</button>
+					</div>
 					<a href=""><img src="img/learn.jpg" alt=""></a>
+					<div class="content__info">
+						<h3 class="content__name">A plus</h3>
+						<p class="content__description">Лендинг курсов повышения<br> квалификации</p>
+						<button class="content__price">9 900 руб.</button>
+					</div>
 					<a href=""><img src="img/kraft.jpg" alt=""></a>
+					<div class="content__info">
+						<h3 class="content__name">Кваст</h3>
+						<p class="content__description">Промо-сайт производителя<br> крафтового кваса</p>
+						<button class="content__price">9 900 руб.</button>
+					</div>
 					<a href="" class="numbers">1</a>
 					<a href="" class="numbers">2</a>
 					<a href="" class="numbers">3</a>
@@ -87,10 +116,10 @@
 			</div>
 		</div>
 	</section>
-	<footer>
+	<footer id="footer" class="footer">
 	<div class="container">
 		<div class="row">
-		<div class="links">
+		<div class="footer__links">
 			<a href="https://vk.com">
 				<i class="fa fa-vk" aria-hidden="true"></i>
 			</a>
