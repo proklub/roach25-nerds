@@ -1,0 +1,256 @@
+body {
+	font-family: 'PT Sans Narrow', sans-serif;
+	background-image: url(../img/index.jpg);
+	background-repeat: no-repeat;
+	background-color: white; 
+}
+.container {
+	margin-left: 70px;
+    margin-right: 70px;
+}
+.logo {
+	display: inline-block;
+	margin-right: 75px;
+    margin-top: 30px;
+}
+.menu {
+	display: inline-block;
+	margin-right: 100px;
+}
+.basket {
+	display: inline-block;
+}
+.basket span {
+	margin-right: 20px;
+}
+.header {
+	background-color: #eeeeee;
+}
+.menu__li {
+    display: inline-block;
+    margin-right: 15px;
+}
+.menu__link {
+	color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 50px;
+}
+.header__bottom-h1 {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 75px;
+    letter-spacing: 1px;
+    font-size: 55px;
+}
+.basket a {
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.content__form {
+	display: inline-block;
+	vertical-align: top;
+}
+.content__example {
+	display: inline-block;
+	width: 850px;
+	margin-left: 125px;
+	margin-bottom: 50px;
+}
+.content__example img {
+    width: 325px;
+    height: 450px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.content__li {
+    display: inline-block;
+}
+.content__li a {
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	margin-right: 20px;
+}
+button {
+    background-color: #eeeeee;
+    border: none;
+    width: 133px;
+    height: 35px;
+}
+.content__example .numbers {
+	width: 35px;
+	height: 35px;
+    background-color: #eeeeee;
+    border: none;
+    color: black;
+    font-weight: bold;
+    padding: 3px 5px 3px 5px;
+    text-decoration: none;
+}
+.numbers:hover {
+    background-color: white;
+}
+.content__example .next {
+    width: 35px;
+    height: 35px;
+    background-color: #eeeeee;
+    border: none;
+    color: black;
+    font-weight: bold;
+    padding: 3px 5px 3px 5px;
+    text-decoration: none;    
+}
+
+.content__form input {
+	margin-bottom: 15px;
+}
+.map img {
+	width: 100%;
+}
+.fa {
+    width: 43px;
+    height: 43px;
+    background-color: #e1e1e1;
+    color: white;
+    font-size: 18px;
+    line-height: 43px;
+    text-align: center;
+    border-radius: 43px;
+    display: inline-block;
+}
+.networks {
+	display: inline-block;
+	margin-left: 150px;
+}
+.networks b {
+	font-size: 50px;
+}
+.map__info {
+    background-color: white;
+    position: absolute;
+    top: 2020px;
+    left: 135px;
+    padding: 20px 40px 45px 30px;
+    margin-top: 35px;
+}
+.first-button {
+    background-color: #fb565a;
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/*index.html*/
+.discript {
+    display: inline-block;
+    vertical-align: top;
+}
+.slider {
+    display: inline-block;
+    width: 700px;
+}
+.discript-p-main {
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 80px;
+}
+.discript-p-second {
+    padding-bottom: 45px;
+
+}
+.advantages__list {
+    display: inline-block;
+}
+.second-button {
+    background-color: #00ca74;
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.third-button {
+    background-color:#efc84a;
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.advantages__list {
+    padding-top: 75px;
+    padding-right: 50px;
+}
+.advantages__list-text {
+    padding-bottom: 25px;
+}
+hr {
+    width: 89%;
+    background-color: #eeeeee;
+    margin-top: 80px;
+    margin-bottom: 90px;
+}
+.news__about {
+    font-weight: bold;
+    font-size: 45px;
+}
+.news-h3 {
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+.news-li {
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+li:before {
+    border: 2px solid #fb565a;
+
+}
+.news-first {
+    float: left;
+}
+.news-second {
+    float: right;
+}
+.news-second-detail {
+    display: inline-block;
+    margin-right: 30px;
+}
+.news-second-percent {
+    font-weight: bold;
+    font-size: 40px;
+}
+.news-second-percent span {
+    vertical-align: super;
+    font-size: 20px;
+}
+.clearfix {
+    clear: both;
+}
+.map__info-index {
+    background-color: white;
+    position: absolute;
+    top: 2040px;
+    left: 135px;
+    padding: 20px 40px 45px 30px;
+    margin-top: 35px;
+}
+.partners__img {
+    display: inline-block;
+    border: 2px solid #eeeeee;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    padding-right: 55px;
+    padding-left: 55px;
+}
+.partners__img img {
+    height: 52px;
+}
+.last {
+    border: none;
+}
