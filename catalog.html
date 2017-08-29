@@ -12,18 +12,20 @@
 		<div class="container">
 			<div class="header__up row">
 				<div class="logo">
+				<a href="index.html">
 					<img src="img/logo.png" alt="">
+				</a>
 				</div>
 				<div class="header__up">
-					<ul class="menu__list">
-						<li class="menu__item"><a class="menu__link" href="">Студия</a></li>
+					<ul class="menu">
+						<li class="menu__item"><a class="menu__link" href="index.html">Студия</a></li>
 						<li class="menu__item"><a class="menu__link" href="">Клиенты</a></li>					   
 						<li class="menu__item"><a class="menu__link" href="">Магазин</a></li>
 						<li class="menu__item"><a class="menu__link" href="">Контакты</a></li>
 					</ul>		
 				</div>
 				<div class="basket">
-				<a href=""><img src="img/basket.png" alt=""><span>Корзина</span></a>
+				<a href=""><img src="img/basket.png" alt="" class="basket__img"><span>Корзина</span></a>
 				</div>	
 				<div class="header__bottom">
 					<h1 class="header__bottom-h1">Магазин готовых шаблонов</h1>
@@ -36,80 +38,123 @@
 		<div class="container">
 			<div class="row">
 				<div class="content__form">
-					<h2>Стоимость:</h2>
 
 					<form action="">
-						<p><b>Сетка:</b></p>
-						   <label><input type="radio" name="grid" value="adaptive">Адаптивная<Br></label>
-						   <label><input type="radio" name="grid" value="fixed">Фиксированная<Br></label>
-						   <label><input type="radio" name="grid" value="rubber">Резиновая<Br></label>
-						<p><b>Особенности:</b></p>
-						   <label><input type="checkbox" name="features" value="slider">Слайдер<Br></label>
-						   <label><input type="checkbox" name="features" value="advantage block">Блок преимуществ<Br></label>
-						   <label><input type="checkbox" name="features" value="news">Новости<Br></label>
-						   <label><input type="checkbox" name="features" value="galery">Галерея<Br></label>
-						   <label><input type="checkbox" name="features" value="basket">Корзина<Br></label>
-					<button>Показать</button>
+					<p class="content__form-h2">Стоимость:</p>
+					<div style="position: relative;" class="range-filter">
+						<div class="range-controls">
+							<div class="scale"><div style="width:70%;" class="bar"></div></div>
+							<div class="toggle min-toggle"></div>
+							<div class="toggle max-toggle"></div>
+						</div>
+						<div class="price-controls">
+							<label style="position: absolute; left: 0;" for="min-price">от<input name="min-price" id="min-price" class="min-price" type="text" value="0"></label>
+							<label style="position: absolute; right: 0;" for="max-price">до<input name="max-price" id="max-price" class="max-price" type="text" value="15 000"></label>
+						</div>
+					</div>
+						<fieldset class="content__fieldset">
+						<legend class="content__legend">Сетка:</legend>
+						  <input type="radio" name="grid" value="adaptive" id="radio1"><label for="radio1" class="content__label">Адаптивная</label><Br>
+						  <input type="radio" name="grid" value="fixed" id="radio2"><label for="radio2" class="content__label">Фиксированная</label><Br>
+						  <input type="radio" name="grid" value="rubber" id="radio3"><label for="radio3" class="content__label">Резиновая</label><Br>
+						</fieldset>
+						<fieldset class="content__fieldset">
+						<legend class="content__legend">Особенности:</legend>
+						   <input type="checkbox" name="features" value="slider" id="check1"><label for="check1" class="content__label">Слайдер</label><Br>
+						   <input type="checkbox" name="features" value="advantage block" id="check2"><label for="check2" class="content__label">Блок преимуществ</label><Br>
+						   <input type="checkbox" name="features" value="news" id="check3"><label for="check3" class="content__label">Новости</label><Br>
+						   <input type="checkbox" name="features" value="galery" id="check4"><label for="check4" class="content__label">Галерея</label><Br>
+						   <input type="checkbox" name="features" value="basket" id="check5"><label for="check5" class="content__label">Корзина</label><Br>
+						</fieldset>
+					<a href="" class="content__show">Показать</a>
 					</form>
 				</div>
 				<div class="content__example">
-					<h2>Сортировать:</h2>
 					<div class="content__block">
-					<ul class="content__list">
-						<li class="content__item"><a href="" class="content__link">По цене</a></li>
-						<li class="content__item"><a href="" class="content__link">По типу</a></li>
-						<li class="content__item"><a href="" class="content__link">По названию</a></li>
-					</ul>
+					<div class="content__first">
+						<div class="content__left">
+							<p class="content__head">Сортировать:</p>
+						</div>
+						<div class="content__right">
+								<ul class="content__list">
+									<li class="content__item"><a href="" class="content__link content__link-active">По цене</a></li>
+									<li class="content__item"><a href="" class="content__link">По типу</a></li>
+									<li class="content__item"><a href="" class="content__link">По названию</a></li>
+								</ul>
+							<div class="content__updown">
+								<a href="">
+									<img src="img/down.png" alt="">
+								</a>
+								<a href="">
+									<img src="img/up.png" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="clearfix"></div>
 					</div>
+					<div class="content__links">
 					<a href=""><img src="img/sedona.jpg" alt=""></a>
 					<div class="content__info">
 						<h3 class="content__name">Sedona</h3>
 						<p class="content__description">Информационный сайт<br> для туристов</p>
-						<button class="content__price">9 900 руб.</button>
+						<a href="" class="content__price">9 900 руб.</a>
 					</div>
+					</div>
+					<div class="content__links">
 					<a href=""><img src="img/pink.jpg" alt=""></a>
 					<div class="content__info">
 						<h3 class="content__name">Pink app</h3>
 						<p class="content__description">Продуктовый лендинг<br> приложения для iOS и Android</p>
-						<button class="content__price">9 900 руб.</button>
+						<a href="" class="content__price">9 900 руб.</a>
 					</div>
+					</div>
+					<div class="content__links">
 					<a href=""><img src="img/barbershop.jpg" alt=""></a>
 					<div class="content__info">
 						<h3 class="content__name">Barbershop</h3>
 						<p class="content__description">Сайт салона красоты.<br> Для мужчин, да</p>
-						<button class="content__price">9 900 руб.</button>
+						<a href="" class="content__price">9 900 руб.</a>
 					</div>
+					</div>
+					<div class="content__links">
 					<a href=""><img src="img/mishka.jpg" alt=""></a>
 					<div class="content__info">
 						<h3 class="content__name">Mishka</h3>
 						<p class="content__description">Интернет-магазин<br> вязаных игрушек</p>
-						<button class="content__price">9 900 руб.</button>
+						<a href="" class="content__price">9 900 руб.</a>
 					</div>
+					</div>
+					<div class="content__links">
 					<a href=""><img src="img/learn.jpg" alt=""></a>
 					<div class="content__info">
 						<h3 class="content__name">A plus</h3>
 						<p class="content__description">Лендинг курсов повышения<br> квалификации</p>
-						<button class="content__price">9 900 руб.</button>
+						<a href="" class="content__price">9 900 руб.</a>
 					</div>
+					</div>
+					<div class="content__links">
 					<a href=""><img src="img/kraft.jpg" alt=""></a>
 					<div class="content__info">
 						<h3 class="content__name">Кваст</h3>
 						<p class="content__description">Промо-сайт производителя<br> крафтового кваса</p>
-						<button class="content__price">9 900 руб.</button>
+						<a href="" class="content__price">9 900 руб.</a>
 					</div>
-					<a href="" class="numbers">1</a>
-					<a href="" class="numbers">2</a>
-					<a href="" class="numbers">3</a>
-					<a href="" class="next">Следующая</a>
+					</div>
+					<div class="content__page">
+						<a href="" class="active">1</a>
+						<a href="" class="numbers">2</a>
+						<a href="" class="numbers">3</a>
+						<a href="" class="next">Следующая</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<section>
 		<div class="map">
-			<img src="img/map.jpg" alt="">
+			<img src="img/map.jpg" alt="" class="map__img">
 			<div class="map__info">
-				<h3>Nёrds design studio</h3>
+				<h3 class="map__head">Nёrds design studio</h3>
 				<p class="map__info-adress">191186, Санкт-Петербург,<br>  ул. Б. Конюшенная, д. 19/8</p>
 				<p class="map__info-telephone">тел. +7(812)275-75-75</p>
 				<a href="" class="first-button">Напишите нам</a>
@@ -120,14 +165,14 @@
 	<div class="container">
 		<div class="row">
 		<div class="footer__links">
-			<a href="https://vk.com">
-				<i class="fa fa-vk" aria-hidden="true"></i>
+			<a href="https://vk.com" class="fa">
+				<img src="img/vk.png" alt="" class="vk">
 			</a>
-			<a href="https://facebook.com">
-				<i class="fa fa-facebook-official" aria-hidden="true"></i>
+			<a href="https://facebook.com" class="fa">
+				<img src="img/facebook.png" alt="" class="facebook">
 			</a>
-			<a href="https://instagram.com">
-				<i class="fa fa-instagram" aria-hidden="true"></i>
+			<a href="https://instagram.com" class="fa">
+				<img src="img/instagram.png" alt="" class="instagram">
 			</a>
 				<p class="networks"><b>Давайте дружить, это выгодно!</b><br>Скидка 10% для друзей из социальных сетей.</p>
 		</div>
