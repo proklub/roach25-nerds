@@ -12,9 +12,9 @@
 		<div class="container">
 			<div class="header__up row">
 				<div class="logo">
-				<a href="index.html">
-					<img src="img/logo.png" alt="">
-				</a>
+					<a href="index.html">
+						<img class="logo__img" src="img/logo.png" alt="">
+					</a>
 				</div>
 				<div class="header__up">
 					<ul class="menu">
@@ -25,7 +25,7 @@
 					</ul>		
 				</div>
 				<div class="basket">
-				<a href=""><img src="img/basket.png" alt="" class="basket__img"><span>Корзина</span></a>
+					<a href=""><img src="img/basket.png" alt="" class="basket__img"><span>Корзина</span></a>
 				</div>	
 				<div class="header__bottom">
 					<h1 class="header__bottom-h1">Магазин готовых шаблонов</h1>
@@ -33,55 +33,70 @@
 			</div>
 		</div>
 	</header>
-	</section>
-	<section id="content" class="content">
-		<div class="container">
-			<div class="row">
-				<div class="content__form">
-
-					<form action="">
+</section>
+<section id="content" class="content">
+	<div class="container">
+		<div class="row">
+			<div class="content__form">
+				<form action="" method="get" class="content__form-one">
 					<p class="content__form-h2">Стоимость:</p>
-					<div style="position: relative;" class="range-filter">
-						<div class="range-controls">
-							<div class="scale"><div style="width:70%;" class="bar"></div></div>
+					<div class="content__range-filter">
+						<div class="content__range-controls">
+							<div class="content__scale"><div class="content__bar"></div></div>
 							<div class="toggle min-toggle"></div>
 							<div class="toggle max-toggle"></div>
 						</div>
-						<div class="price-controls">
-							<label style="position: absolute; left: 0;" for="min-price">от<input name="min-price" id="min-price" class="min-price" type="text" value="0"></label>
-							<label style="position: absolute; right: 0;" for="max-price">до<input name="max-price" id="max-price" class="max-price" type="text" value="15 000"></label>
+						<div class="content__price-controls">
+							<label for="min-price" class="content__min-price">от<input name="min-price" id="min-price" class="min-price" type="text" value="0"></label>
+							<label for="max-price" class="content__max-price">до<input name="max-price" id="max-price" class="max-price" type="text" value="15 000"></label>
 						</div>
 					</div>
-						<fieldset class="content__fieldset">
-						<legend class="content__legend">Сетка:</legend>
-						  <input type="radio" name="grid" value="adaptive" id="radio1"><label for="radio1" class="content__label">Адаптивная</label><Br>
-						  <input type="radio" name="grid" value="fixed" id="radio2"><label for="radio2" class="content__label">Фиксированная</label><Br>
-						  <input type="radio" name="grid" value="rubber" id="radio3"><label for="radio3" class="content__label">Резиновая</label><Br>
-						</fieldset>
-						<fieldset class="content__fieldset">
-						<legend class="content__legend">Особенности:</legend>
-						   <input type="checkbox" name="features" value="slider" id="check1"><label for="check1" class="content__label">Слайдер</label><Br>
-						   <input type="checkbox" name="features" value="advantage block" id="check2"><label for="check2" class="content__label">Блок преимуществ</label><Br>
-						   <input type="checkbox" name="features" value="news" id="check3"><label for="check3" class="content__label">Новости</label><Br>
-						   <input type="checkbox" name="features" value="galery" id="check4"><label for="check4" class="content__label">Галерея</label><Br>
-						   <input type="checkbox" name="features" value="basket" id="check5"><label for="check5" class="content__label">Корзина</label><Br>
-						</fieldset>
-					<a href="" class="content__show">Показать</a>
-					</form>
-				</div>
-				<div class="content__example">
-					<div class="content__block">
-					<div class="content__first">
-						<div class="content__left">
-							<p class="content__head">Сортировать:</p>
+					<fieldset class="fieldset">
+						<legend class="fieldset__legend">Сетка:</legend>
+						<div class="fieldset__list">
+							<input type="radio" name="grid" value="adaptive" class="fieldset__radio" id="radio1"><label for="radio1" class="fieldset__label">Адаптивная</label>
 						</div>
-						<div class="content__right">
-								<ul class="content__list">
-									<li class="content__item"><a href="" class="content__link content__link-active">По цене</a></li>
-									<li class="content__item"><a href="" class="content__link">По типу</a></li>
-									<li class="content__item"><a href="" class="content__link">По названию</a></li>
-								</ul>
-							<div class="content__updown">
+						<div class="fieldset__list">
+							<input type="radio" name="grid" value="fixed" class="fieldset__radio" id="radio2"><label for="radio2" class="fieldset__label">Фиксированная</label>
+						</div>
+						<div class="fieldset__list">
+							<input type="radio" name="grid" value="rubber" class="fieldset__radio" id="radio3"><label for="radio3" class="fieldset__label">Резиновая</label>
+						</div>
+					</fieldset>
+					<fieldset class="fieldset">
+						<legend class="fieldset__legend">Особенности:</legend>
+						<div class="fieldset__list">
+							<input type="checkbox" name="features" value="slider" class="fieldset__checkbox" id="check1"><label for="check1" class="fieldset__label">Слайдер</label>
+						</div>
+						<div class="fieldset__list">
+							<input type="checkbox" name="features" value="advantage block" class="fieldset__checkbox" id="check2"><label for="check2" class="fieldset__label">Блок преимуществ</label>
+						</div>
+						<div class="fieldset__list">
+							<input type="checkbox" name="features" value="news" class="fieldset__checkbox" id="check3"><label for="check3" class="fieldset__label">Новости</label>
+						</div>
+						<div class="fieldset__list">
+							<input type="checkbox" name="features" value="galery" class="fieldset__checkbox" id="check4"><label for="check4" class="fieldset__label">Галерея</label>
+						</div>
+						<div class="fieldset__list">
+							<input type="checkbox" name="features" value="basket" class="fieldset__checkbox" id="check5"><label for="check5" class="fieldset__label">Корзина</label>
+						</div>
+					</fieldset>
+					<button href="" class="content__show">Показать</button>
+				</form>
+			</div>
+			<div class="content__example">
+				<div class="content__block">
+					<div class="sorting">
+						<div class="sorting__left">
+							<span class="sorting__head">Сортировать:</span>
+						</div>
+						<div class="sorting__right">
+							<ul class="sorting__list">
+								<li class="sorting__item"><a href="" class="sorting__link sorting__link-active">По цене</a></li>
+								<li class="sorting__item"><a href="" class="sorting__link">По типу</a></li>
+								<li class="sorting__item"><a href="" class="sorting__link">По названию</a></li>
+							</ul>
+							<div class="sorting__updown">
 								<a href="">
 									<img src="img/down.png" alt="">
 								</a>
@@ -90,61 +105,60 @@
 								</a>
 							</div>
 						</div>
-						<div class="clearfix"></div>
 					</div>
-					<div class="content__links">
-					<a href=""><img src="img/sedona.jpg" alt=""></a>
-					<div class="content__info">
-						<h3 class="content__name">Sedona</h3>
-						<p class="content__description">Информационный сайт<br> для туристов</p>
-						<a href="" class="content__price">9 900 руб.</a>
+					<div class="product">
+						<a href=""><img src="img/sedona.jpg" alt=""></a>
+						<div class="product__info">
+							<h3 class="product__name">Sedona</h3>
+							<p class="product__description">Информационный сайт<br> для туристов</p>
+							<a href="" class="product__price">9 900 руб.</a>
+						</div>
 					</div>
+					<div class="product">
+						<a href=""><img src="img/pink.jpg" alt=""></a>
+						<div class="product__info">
+							<h3 class="product__name">Pink app</h3>
+							<p class="product__description">Продуктовый лендинг<br> приложения для iOS и Android</p>
+							<a href="" class="product__price">9 900 руб.</a>
+						</div>
 					</div>
-					<div class="content__links">
-					<a href=""><img src="img/pink.jpg" alt=""></a>
-					<div class="content__info">
-						<h3 class="content__name">Pink app</h3>
-						<p class="content__description">Продуктовый лендинг<br> приложения для iOS и Android</p>
-						<a href="" class="content__price">9 900 руб.</a>
+					<div class="product">
+						<a href=""><img src="img/barbershop.jpg" alt=""></a>
+						<div class="product__info">
+							<h3 class="product__name">Barbershop</h3>
+							<p class="product__description">Сайт салона красоты.<br> Для мужчин, да</p>
+							<a href="" class="product__price">9 900 руб.</a>
+						</div>
 					</div>
+					<div class="product">
+						<a href=""><img src="img/mishka.jpg" alt=""></a>
+						<div class="product__info">
+							<h3 class="product__name">Mishka</h3>
+							<p class="product__description">Интернет-магазин<br> вязаных игрушек</p>
+							<a href="" class="product__price">9 900 руб.</a>
+						</div>
 					</div>
-					<div class="content__links">
-					<a href=""><img src="img/barbershop.jpg" alt=""></a>
-					<div class="content__info">
-						<h3 class="content__name">Barbershop</h3>
-						<p class="content__description">Сайт салона красоты.<br> Для мужчин, да</p>
-						<a href="" class="content__price">9 900 руб.</a>
+					<div class="product">
+						<a href=""><img src="img/learn.jpg" alt=""></a>
+						<div class="product__info">
+							<h3 class="product__name">A plus</h3>
+							<p class="product__description">Лендинг курсов повышения<br> квалификации</p>
+							<a href="" class="product__price">9 900 руб.</a>
+						</div>
 					</div>
+					<div class="product">
+						<a href=""><img src="img/kraft.jpg" alt=""></a>
+						<div class="product__info">
+							<h3 class="product__name">Кваст</h3>
+							<p class="product__description">Промо-сайт производителя<br> крафтового кваса</p>
+							<a href="" class="product__price">9 900 руб.</a>
+						</div>
 					</div>
-					<div class="content__links">
-					<a href=""><img src="img/mishka.jpg" alt=""></a>
-					<div class="content__info">
-						<h3 class="content__name">Mishka</h3>
-						<p class="content__description">Интернет-магазин<br> вязаных игрушек</p>
-						<a href="" class="content__price">9 900 руб.</a>
-					</div>
-					</div>
-					<div class="content__links">
-					<a href=""><img src="img/learn.jpg" alt=""></a>
-					<div class="content__info">
-						<h3 class="content__name">A plus</h3>
-						<p class="content__description">Лендинг курсов повышения<br> квалификации</p>
-						<a href="" class="content__price">9 900 руб.</a>
-					</div>
-					</div>
-					<div class="content__links">
-					<a href=""><img src="img/kraft.jpg" alt=""></a>
-					<div class="content__info">
-						<h3 class="content__name">Кваст</h3>
-						<p class="content__description">Промо-сайт производителя<br> крафтового кваса</p>
-						<a href="" class="content__price">9 900 руб.</a>
-					</div>
-					</div>
-					<div class="content__page">
-						<a href="" class="active">1</a>
-						<a href="" class="numbers">2</a>
-						<a href="" class="numbers">3</a>
-						<a href="" class="next">Следующая</a>
+					<div class="pages">
+						<a href="" class="pages__active">1</a>
+						<a href="" class="pages__numbers">2</a>
+						<a href="" class="pages__numbers">3</a>
+						<a href="" class="pages__next">Следующая</a>
 					</div>
 				</div>
 			</div>
@@ -162,23 +176,32 @@
 		</div>
 	</section>
 	<footer id="footer" class="footer">
-	<div class="container">
-		<div class="row">
-		<div class="footer__links">
-			<a href="https://vk.com" class="fa">
-				<img src="img/vk.png" alt="" class="vk">
-			</a>
-			<a href="https://facebook.com" class="fa">
-				<img src="img/facebook.png" alt="" class="facebook">
-			</a>
-			<a href="https://instagram.com" class="fa">
-				<img src="img/instagram.png" alt="" class="instagram">
-			</a>
-				<p class="networks"><b>Давайте дружить, это выгодно!</b><br>Скидка 10% для друзей из социальных сетей.</p>
+		<div class="container">
+			<div class="row footer__links">
+				<a href="https://vk.com" class="fa">
+					<img src="img/vk.png" alt="" class="vk">
+				</a>
+				<a href="https://facebook.com" class="fa">
+					<img src="img/facebook.png" alt="" class="facebook">
+				</a>
+				<a href="https://instagram.com" class="fa">
+					<img src="img/instagram.png" alt="" class="instagram">
+				</a>
+				<p class="networks"><strong class="networks__strong">Давайте дружить, это выгодно!</strong><br>Скидка 10% для друзей из социальных сетей.</p>
+			</div>
 		</div>
+		<div class="footer__form container">
+			<div class="row">
+				<form class="modal-window">
+					<h3 class="modal-window__h3">Напишите нам</h3>
+					<label class="modal-window__label">Ваше имя:<input type="text" class="modal-window__input" placeholder="Представьтесь, пожалуйста" size="38px"></label>
+					<label class="modal-window__label">Ваш e-mail:<input type="text" class="modal-window__input" placeholder="Для отправки ответа" size="38px"></label>
+					<label class="modal-window__label">Текст письма:<textarea name="" id="" cols="89" rows="10" class="modal-window__textarea" placeholder="В свободной форме"></textarea></label>
+					<button class="modal-window__button">Отправить</button>
+				</form>				
+			</div>
 		</div>
-	</div>
+
 	</footer>
 </body>
 </html>
-

@@ -15,6 +15,10 @@ body {
 	margin-right: 75px;
     margin-top: 30px;
 }
+.logo__img {
+    height: 65px;
+    width: 160px;
+}
 .menu {
 	display: inline-block;
 	margin-right: 100px;
@@ -61,9 +65,25 @@ body {
 	text-transform: uppercase;
 	font-weight: bold;
 }
-.content__label {
+.fieldset__label {
     margin-left: 13px;
 }
+.fieldset__radio {
+    width: 17px;
+    height: 17px;
+    vertical-align: top;
+    margin: 0 3px 0 0;
+}
+.fieldset__radio + label {
+    cursor: pointer;
+}
+.fieldset__checkbox {
+    width: 17px;
+    height: 17px; 
+    vertical-align: top;
+    margin: 0 3px 0 0;  
+}
+
 .content__form {
 	display: inline-block;
 	vertical-align: top;
@@ -82,7 +102,7 @@ body {
 .content__links img {
     margin-bottom: 35px;
 }
-.content__first {
+.sorting {
     margin-right: 100px;
 }
 .content__li {
@@ -94,44 +114,37 @@ body {
 	text-transform: uppercase;
 	margin-right: 20px;
 }
-.content__item {
+.sorting__item {
     display: inline-block;
 }
-.content__link {
+.sorting__link {
     text-transform: uppercase;
     text-decoration: none;
     margin-right: 50px;
     color: #b2b2b2;
 }
-.content__link-active {
+.sorting__link-active {
     color: black;
 }
-.content__name {
+.product__name {
     text-transform: uppercase;
     text-decoration: none;
     color: black;
     padding-top: 35px;
     padding-bottom: 25px;
 }
-.content__description {
+.product__description {
     color: #666666;
     padding-bottom: 15px;
 }
-.content__price {
+.product__price {
     background-color: #fb565a;
     text-transform: uppercase;
     color: white;
     padding: 10px 25px 10px 25px;
     text-decoration: none;
 }
-button {
-    background-color: #eeeeee;
-    border: none;
-    width: 133px;
-    height: 35px;
-}
-
-.content__example .numbers {
+.pages__numbers {
 	width: 35px;
 	height: 35px;
     background-color: #eeeeee;
@@ -140,7 +153,7 @@ button {
     padding: 3px 5px 3px 5px;
     text-decoration: none;
 }
-.active {
+.pages__active {
     width: 32px;
     height: 32px;
     background-color: white;
@@ -149,14 +162,24 @@ button {
     padding: 1px 3px;
     text-decoration: none;    
 }
-.content__links {
+.pages__next {
+    width: 35px;
+    height: 35px;
+    background-color: #eeeeee;
+    border: none;
+    color: black;
+    padding: 3px 5px 3px 5px;
+    text-decoration: none;    
+}
+.product {
     position: relative;
     width: 325px;
     height: 450px;
     display: inline-block;
     margin-right: 45px;
+    margin-bottom: 40px;
 }
-.content__info {
+.product__info {
     position: absolute;
     bottom: 0px;
     background-color: #eeeeee;
@@ -169,19 +192,11 @@ button {
     width: 325px;
     height: 40px;
 }
-.content__links:hover .content__info {
+.product:hover .product__info {
     display: inline-block;
 }
-.content__example .next {
-    width: 35px;
-    height: 35px;
-    background-color: #eeeeee;
-    border: none;
-    color: black;
-    padding: 3px 5px 3px 5px;
-    text-decoration: none;    
-}
-.content__head {
+
+.sorting__head {
     display: inline-block;
     font-weight: bold;
     text-transform: uppercase;
@@ -201,10 +216,10 @@ button {
 .contetn__first {
     display: inline-block;
 }
-.content__updown, .content__list {
+.sorting__updown, .sorting__list {
     display: inline-block;
 }
-.content__updown img {
+.sorting__updown img {
     width: 10px;
     height: 10px;
     vertical-align: middle;
@@ -212,28 +227,31 @@ button {
 .content__form input {
 	margin-bottom: 15px;
 }
-.content__fieldset {
+.fieldset {
     border: none;
 }
-.content__legend {
+.fieldset__legend {
     font-weight: bold;
     margin-top: 30px;
     margin-bottom: 15px;
     font-size: 20px;
 }
-.content__left {
+.sorting__left {
     float: left;
 }
-.content__right {
+.sorting__right {
     float: right;
 }
-
-.range-filter {
-    width: 240px;
-    margin: 35px auto;
-    margin-bottom: 85px;
+.sorting__right:after {
+    clear: both;
 }
-.range-controls {
+.content__range-filter {
+    width: 240px;
+    margin-bottom: 85px;
+    position: relative;
+}
+
+.content__range-controls {
     position: relative;
     height: 80px;
     margin-bottom: 15px;
@@ -242,16 +260,17 @@ button {
     border-radius: 5px;
     overflow: hidden;
 }
-.range-controls .scale {
+.content__range-controls .content__scale {
     margin-top: 39px;
     height: 2px;
     background: #d7dcde;
 }
-.range-controls .bar {
+.content__range-controls .content__bar {
     height: 2px;
     background: #00ca74;
+    width: 70%;
 }
-.range-controls .toggle {
+.content__range-controls .toggle {
     position: absolute;
     top: 30px;
     left: 30px;
@@ -263,10 +282,18 @@ button {
     border-radius: 50%;
     box-shadow: 0 2px 1px 0 #cfcfcf;
 }
-.range-controls .max-toggle {
+.content__range-controls .max-toggle {
     left: 145px;
 }
-.price-controls input {
+.content__min-price {
+    position: absolute; 
+    left: 0;
+}
+.content__max-price {
+    position: absolute; 
+    right: 0;
+}
+.content__price-controls .min-price, .content__price-controls .max-price {
     width: 60px;
     padding: 8px 10px;
     margin-left: 10px;
@@ -294,6 +321,7 @@ button {
     text-transform: uppercase;
     text-decoration: none;
     color: black;
+    border: none;
 }
 .map img {
 	width: 100%;
@@ -344,7 +372,7 @@ button {
 	display: inline-block;
 	margin-left: 150px;
 }
-.networks b {
+.networks__strong {
 	font-size: 50px;
 }
 .map__info {
@@ -572,4 +600,53 @@ li:before {
 }
 .networks__friens {
     font-weight: bold;
+}
+.footer__form {
+    position: absolute;
+    top: 1795px;
+    left: 15%;
+    background-color: white;
+    width: 70%;
+    box-shadow: 4px 15px 65px rgba(0,0,0,0.5);
+    display: none;
+}
+.modal-window {
+    text-align: left;
+    color: black;
+    padding-left: 60px;
+}
+.modal-window__h3 {
+    font-size: 40px;
+}
+.modal-window__label {
+    font-weight: bold;
+    display: inline-block;
+}
+.modal-window__input {
+    display: block;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    padding-left: 13px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.modal-window__textarea {
+    display: block;
+    color: #a1a1a1;
+    margin-top: 12px;
+    padding-left: 13px;
+    padding-top: 13px;
+}
+.modal-window__button {
+    display: block;
+    padding: 10px 50px;
+    background-color: #fb565a;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    text-transform: uppercase;
+    margin-top: 45px;
+    margin-bottom: 80px;
+
 }
