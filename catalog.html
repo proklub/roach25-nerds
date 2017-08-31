@@ -10,7 +10,7 @@
 <body>
 	<header class="header">
 		<div class="container">
-			<div class="header__up row">
+			<div class="row">
 				<div class="logo">
 					<a href="index.html">
 						<img class="logo__img" src="img/logo.png" alt="">
@@ -22,17 +22,18 @@
 						<li class="menu__item"><a class="menu__link" href="">Клиенты</a></li>					   
 						<li class="menu__item"><a class="menu__link" href="">Магазин</a></li>
 						<li class="menu__item"><a class="menu__link" href="">Контакты</a></li>
-					</ul>		
-				</div>
-				<div class="basket">
-					<a href=""><img src="img/basket.png" alt="" class="basket__img"><span>Корзина</span></a>
-				</div>	
-				<div class="header__bottom">
-					<h1 class="header__bottom-h1">Магазин готовых шаблонов</h1>
+					</ul>
+					<div class="basket">
+						<a href=""><img src="img/basket.png" alt="" class="basket__img"><span>Корзина</span></a>
+					</div>			
 				</div>
 			</div>
+			<div class="header__bottom row">
+				<h1 class="header__bottom-h1">Магазин готовых шаблонов</h1>
+			</div>
 		</div>
-	</header>
+	</div>
+</header>
 </section>
 <section id="content" class="content">
 	<div class="container">
@@ -43,8 +44,8 @@
 					<div class="content__range-filter">
 						<div class="content__range-controls">
 							<div class="content__scale"><div class="content__bar"></div></div>
-							<div class="toggle min-toggle"></div>
-							<div class="toggle max-toggle"></div>
+							<div class="content__toggle min-toggle"></div>
+							<div class="content__toggle max-toggle"></div>
 						</div>
 						<div class="content__price-controls">
 							<label for="min-price" class="content__min-price">от<input name="min-price" id="min-price" class="min-price" type="text" value="0"></label>
@@ -83,90 +84,91 @@
 					</fieldset>
 					<button href="" class="content__show">Показать</button>
 				</form>
-			</div>
-			<div class="content__example">
-				<div class="content__block">
-					<div class="sorting">
-						<div class="sorting__left">
-							<span class="sorting__head">Сортировать:</span>
-						</div>
-						<div class="sorting__right">
-							<ul class="sorting__list">
-								<li class="sorting__item"><a href="" class="sorting__link sorting__link-active">По цене</a></li>
-								<li class="sorting__item"><a href="" class="sorting__link">По типу</a></li>
-								<li class="sorting__item"><a href="" class="sorting__link">По названию</a></li>
-							</ul>
-							<div class="sorting__updown">
-								<a href="">
-									<img src="img/down.png" alt="">
-								</a>
-								<a href="">
-									<img src="img/up.png" alt="">
-								</a>
-							</div>
+			</div><div class="content__example">
+			<div class="content__block">
+				<div class="sorting row">
+					<div class="sorting__left">
+						<span class="sorting__head">Сортировать:</span>
+					</div>
+					<div class="sorting__right">
+						<ul class="sorting__list">
+							<li class="sorting__item"><a href="" class="sorting__link sorting__link-active">По цене</a></li>
+							<li class="sorting__item"><a href="" class="sorting__link">По типу</a></li>
+							<li class="sorting__item"><a href="" class="sorting__link">По названию</a></li>
+						</ul>
+						<div class="sorting__updown">
+							<a href="">
+								<img src="img/down.png" alt="">
+							</a>
+							<a href="">
+								<img src="img/up.png" alt="">
+							</a>
 						</div>
 					</div>
+				</div>
+				<div class="product__list">
 					<div class="product">
-						<a href=""><img src="img/sedona.jpg" alt=""></a>
+						<a href=""><img class="product__img" src="img/sedona.jpg" alt=""></a>
 						<div class="product__info">
 							<h3 class="product__name">Sedona</h3>
 							<p class="product__description">Информационный сайт<br> для туристов</p>
 							<a href="" class="product__price">9 900 руб.</a>
 						</div>
-					</div>
-					<div class="product">
-						<a href=""><img src="img/pink.jpg" alt=""></a>
-						<div class="product__info">
-							<h3 class="product__name">Pink app</h3>
-							<p class="product__description">Продуктовый лендинг<br> приложения для iOS и Android</p>
-							<a href="" class="product__price">9 900 руб.</a>
-						</div>
-					</div>
-					<div class="product">
-						<a href=""><img src="img/barbershop.jpg" alt=""></a>
-						<div class="product__info">
-							<h3 class="product__name">Barbershop</h3>
-							<p class="product__description">Сайт салона красоты.<br> Для мужчин, да</p>
-							<a href="" class="product__price">9 900 руб.</a>
-						</div>
-					</div>
-					<div class="product">
-						<a href=""><img src="img/mishka.jpg" alt=""></a>
-						<div class="product__info">
-							<h3 class="product__name">Mishka</h3>
-							<p class="product__description">Интернет-магазин<br> вязаных игрушек</p>
-							<a href="" class="product__price">9 900 руб.</a>
-						</div>
-					</div>
-					<div class="product">
-						<a href=""><img src="img/learn.jpg" alt=""></a>
-						<div class="product__info">
-							<h3 class="product__name">A plus</h3>
-							<p class="product__description">Лендинг курсов повышения<br> квалификации</p>
-							<a href="" class="product__price">9 900 руб.</a>
-						</div>
-					</div>
-					<div class="product">
-						<a href=""><img src="img/kraft.jpg" alt=""></a>
-						<div class="product__info">
-							<h3 class="product__name">Кваст</h3>
-							<p class="product__description">Промо-сайт производителя<br> крафтового кваса</p>
-							<a href="" class="product__price">9 900 руб.</a>
-						</div>
-					</div>
-					<div class="pages">
-						<a href="" class="pages__active">1</a>
-						<a href="" class="pages__numbers">2</a>
-						<a href="" class="pages__numbers">3</a>
-						<a href="" class="pages__next">Следующая</a>
-					</div>
+					</div><!--
+				--><div class="product">
+				<a href=""><img class="product__img" src="img/pink.jpg" alt=""></a>
+				<div class="product__info">
+					<h3 class="product__name">Pink app</h3>
+					<p class="product__description">Продуктовый лендинг<br> приложения для iOS и Android</p>
+					<a href="" class="product__price">9 900 руб.</a>
+				</div>
+					</div><!--
+				--><div class="product">
+				<a href=""><img class="product__img" src="img/barbershop.jpg" alt=""></a>
+				<div class="product__info">
+					<h3 class="product__name">Barbershop</h3>
+					<p class="product__description">Сайт салона красоты.<br> Для мужчин, да</p>
+					<a href="" class="product__price">9 900 руб.</a>
+				</div>
+					</div><!--
+				--><div class="product">
+				<a href=""><img class="product__img" src="img/mishka.jpg" alt=""></a>
+				<div class="product__info">
+					<h3 class="product__name">Mishka</h3>
+					<p class="product__description">Интернет-магазин<br> вязаных игрушек</p>
+					<a href="" class="product__price">9 900 руб.</a>
+				</div>
+					</div><!--
+				--><div class="product">
+				<a href=""><img class="product__img" src="img/learn.jpg" alt=""></a>
+				<div class="product__info">
+					<h3 class="product__name">A plus</h3>
+					<p class="product__description">Лендинг курсов повышения<br> квалификации</p>
+					<a href="" class="product__price">9 900 руб.</a>
+				</div>
+					</div><!--
+				--><div class="product">
+				<a href=""><img class="product__img" src="img/kraft.jpg" alt=""></a>
+				<div class="product__info">
+					<h3 class="product__name">Кваст</h3>
+					<p class="product__description">Промо-сайт производителя<br> крафтового кваса</p>
+					<a href="" class="product__price">9 900 руб.</a>
 				</div>
 			</div>
 		</div>
-	</section>
-	<section>
-		<div class="map">
-			<img src="img/map.jpg" alt="" class="map__img">
+		<div class="pages">
+			<a href="" class="pages__active">1</a>
+			<a href="" class="pages__numbers">2</a>
+			<a href="" class="pages__numbers">3</a>
+			<a href="" class="pages__next">Следующая</a>
+		</div>
+	</div>
+</div>
+</div>
+</section>
+<section>
+	<div class="map">
+		<div class="container">
 			<div class="map__info">
 				<h3 class="map__head">Nёrds design studio</h3>
 				<p class="map__info-adress">191186, Санкт-Петербург,<br>  ул. Б. Конюшенная, д. 19/8</p>
@@ -174,10 +176,12 @@
 				<a href="" class="first-button">Напишите нам</a>
 			</div>
 		</div>
-	</section>
-	<footer id="footer" class="footer">
-		<div class="container">
-			<div class="row footer__links">
+	</div>
+</section>
+<footer id="footer" class="footer">
+	<div class="container">
+		<div class="row footer__links">
+			<div class="socialnetwork">
 				<a href="https://vk.com" class="fa">
 					<img src="img/vk.png" alt="" class="vk">
 				</a>
@@ -187,21 +191,25 @@
 				<a href="https://instagram.com" class="fa">
 					<img src="img/instagram.png" alt="" class="instagram">
 				</a>
-				<p class="networks"><strong class="networks__strong">Давайте дружить, это выгодно!</strong><br>Скидка 10% для друзей из социальных сетей.</p>
+			</div>
+			<div class="networks">
+				<p class="networks__p"><strong class="networks__strong">Давайте дружить, это выгодно!</strong><br>Скидка 10% для друзей из социальных сетей.</p>
 			</div>
 		</div>
-		<div class="footer__form container">
-			<div class="row">
-				<form class="modal-window">
-					<h3 class="modal-window__h3">Напишите нам</h3>
-					<label class="modal-window__label">Ваше имя:<input type="text" class="modal-window__input" placeholder="Представьтесь, пожалуйста" size="38px"></label>
-					<label class="modal-window__label">Ваш e-mail:<input type="text" class="modal-window__input" placeholder="Для отправки ответа" size="38px"></label>
-					<label class="modal-window__label">Текст письма:<textarea name="" id="" cols="89" rows="10" class="modal-window__textarea" placeholder="В свободной форме"></textarea></label>
-					<button class="modal-window__button">Отправить</button>
-				</form>				
-			</div>
-		</div>
+	</div>
+</div>
+<div class="footer__form container">
+	<div class="row">
+		<form class="modal-window">
+			<h3 class="modal-window__h3">Напишите нам</h3>
+			<label class="modal-window__label">Ваше имя:<input type="text" class="modal-window__input" placeholder="Представьтесь, пожалуйста" size="38px"></label>
+			<label class="modal-window__label">Ваш e-mail:<input type="text" class="modal-window__input" placeholder="Для отправки ответа" size="38px"></label>
+			<label class="modal-window__label">Текст письма:<textarea name="" id="" cols="89" rows="10" class="modal-window__textarea" placeholder="В свободной форме"></textarea></label>
+			<button class="modal-window__button">Отправить</button>
+		</form>				
+	</div>
+</div>
 
-	</footer>
+</footer>
 </body>
 </html>
