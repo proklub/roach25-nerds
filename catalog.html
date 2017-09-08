@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Nerds</title>
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/index.css">
 </head>
@@ -38,54 +38,51 @@
 <section id="content" class="content">
 	<div class="container">
 		<div class="row">
-			<div class="content__form">
-				<form action="" method="get" class="content__form-one">
-					<p class="content__form-h2">Стоимость:</p>
-					<div class="content__range-filter">
-						<div class="content__range-controls">
-							<div class="content__scale"><div class="content__bar"></div></div>
-							<div class="content__toggle min-toggle"></div>
-							<div class="content__toggle max-toggle"></div>
-						</div>
-						<div class="content__price-controls">
-							<label for="min-price" class="content__min-price">от<input name="min-price" id="min-price" class="min-price" type="text" value="0"></label>
-							<label for="max-price" class="content__max-price">до<input name="max-price" id="max-price" class="max-price" type="text" value="15 000"></label>
-						</div>
+			<form action="" method="get" class="form">
+				<p class="form__p">Стоимость:</p>
+				<div class="form__range-filter">
+					<div class="form__range-controls">
+						<div class="form__scale"><div class="form__bar"></div></div>
+						<div class="form__toggle min-toggle"></div>
+						<div class="form__toggle max-toggle"></div>
 					</div>
-					<fieldset class="fieldset">
-						<legend class="fieldset__legend">Сетка:</legend>
-						<div class="fieldset__list">
-							<input type="radio" name="grid" value="adaptive" class="fieldset__radio" id="radio1"><label for="radio1" class="fieldset__label">Адаптивная</label>
-						</div>
-						<div class="fieldset__list">
-							<input type="radio" name="grid" value="fixed" class="fieldset__radio" id="radio2"><label for="radio2" class="fieldset__label">Фиксированная</label>
-						</div>
-						<div class="fieldset__list">
-							<input type="radio" name="grid" value="rubber" class="fieldset__radio" id="radio3"><label for="radio3" class="fieldset__label">Резиновая</label>
-						</div>
-					</fieldset>
-					<fieldset class="fieldset">
-						<legend class="fieldset__legend">Особенности:</legend>
-						<div class="fieldset__list">
-							<input type="checkbox" name="features" value="slider" class="fieldset__checkbox" id="check1"><label for="check1" class="fieldset__label">Слайдер</label>
-						</div>
-						<div class="fieldset__list">
-							<input type="checkbox" name="features" value="advantage block" class="fieldset__checkbox" id="check2"><label for="check2" class="fieldset__label">Блок преимуществ</label>
-						</div>
-						<div class="fieldset__list">
-							<input type="checkbox" name="features" value="news" class="fieldset__checkbox" id="check3"><label for="check3" class="fieldset__label">Новости</label>
-						</div>
-						<div class="fieldset__list">
-							<input type="checkbox" name="features" value="galery" class="fieldset__checkbox" id="check4"><label for="check4" class="fieldset__label">Галерея</label>
-						</div>
-						<div class="fieldset__list">
-							<input type="checkbox" name="features" value="basket" class="fieldset__checkbox" id="check5"><label for="check5" class="fieldset__label">Корзина</label>
-						</div>
-					</fieldset>
-					<button href="" class="content__show">Показать</button>
-				</form>
-			</div><div class="content__example">
-			<div class="content__block">
+					<div class="form__price-controls">
+						<label for="min-price" class="form__min-price">от<input name="min-price" id="min-price" class="min-price" type="text" value="0"></label>
+						<label for="max-price" class="form__max-price">до<input name="max-price" id="max-price" class="max-price" type="text" value="15 000"></label>
+					</div>
+				</div>
+				<fieldset class="fieldset">
+					<legend class="fieldset__legend">Сетка:</legend>
+					<div class="fieldset__input choice">
+						<input type="radio" name="grid" value="adaptive" class="fieldset__radio" id="radio1"><label for="radio1" class="fieldset__label">Адаптивная</label>
+					</div>
+					<div class="fieldset__input choice">
+						<input type="radio" name="grid" value="fixed" class="fieldset__radio" id="radio2"><label for="radio2" class="fieldset__label">Фиксированная</label>
+					</div>
+					<div class="fieldset__input choice">
+						<input type="radio" name="grid" value="rubber" class="fieldset__radio" id="radio3"><label for="radio3" class="fieldset__label">Резиновая</label>
+					</div>
+				</fieldset>
+				<fieldset class="fieldset">
+					<legend class="fieldset__legend">Особенности:</legend>
+					<div class="fieldset__input choice">
+						<input type="checkbox" name="features" value="slider" class="fieldset__checkbox" id="check1"><label for="check1" class="fieldset__label">Слайдер</label>
+					</div>
+					<div class="fieldset__input choice">
+						<input type="checkbox" name="features" value="advantage block" class="fieldset__checkbox" id="check2"><label for="check2" class="fieldset__label">Блок преимуществ</label>
+					</div>
+					<div class="fieldset__input choice">
+						<input type="checkbox" name="features" value="news" class="fieldset__checkbox" id="check3"><label for="check3" class="fieldset__label">Новости</label>
+					</div>
+					<div class="fieldset__input choice">
+						<input type="checkbox" name="features" value="galery" class="fieldset__checkbox" id="check4"><label for="check4" class="fieldset__label">Галерея</label>
+					</div>
+					<div class="fieldset__input choice">
+						<input type="checkbox" name="features" value="basket" class="fieldset__checkbox" id="check5"><label for="check5" class="fieldset__label">Корзина</label>
+					</div>
+				</fieldset>
+				<button href="" class="content__show">Показать</button>
+			</form><div class="content__block">
 				<div class="sorting row">
 					<div class="sorting__left">
 						<span class="sorting__head">Сортировать:</span>
@@ -97,7 +94,7 @@
 							<li class="sorting__item"><a href="" class="sorting__link">По названию</a></li>
 						</ul>
 						<div class="sorting__updown">
-							<a href="">
+							<a href="" class="sorting__down">
 								<img src="img/down.png" alt="">
 							</a>
 							<a href="">
@@ -111,7 +108,7 @@
 						<a href=""><img class="product__img" src="img/sedona.jpg" alt=""></a>
 						<div class="product__info">
 							<h3 class="product__name">Sedona</h3>
-							<p class="product__description">Информационный сайт<br> для туристов</p>
+							<p class="product__description">Информационный сайт для туристов</p>
 							<a href="" class="product__price">9 900 руб.</a>
 						</div>
 					</div><!--
@@ -119,7 +116,7 @@
 				<a href=""><img class="product__img" src="img/pink.jpg" alt=""></a>
 				<div class="product__info">
 					<h3 class="product__name">Pink app</h3>
-					<p class="product__description">Продуктовый лендинг<br> приложения для iOS и Android</p>
+					<p class="product__description">Продуктовый лендинг приложения для iOS и Android</p>
 					<a href="" class="product__price">9 900 руб.</a>
 				</div>
 					</div><!--
@@ -127,7 +124,7 @@
 				<a href=""><img class="product__img" src="img/barbershop.jpg" alt=""></a>
 				<div class="product__info">
 					<h3 class="product__name">Barbershop</h3>
-					<p class="product__description">Сайт салона красоты.<br> Для мужчин, да</p>
+					<p class="product__description">Сайт салона красоты. Для мужчин, да</p>
 					<a href="" class="product__price">9 900 руб.</a>
 				</div>
 					</div><!--
@@ -135,7 +132,7 @@
 				<a href=""><img class="product__img" src="img/mishka.jpg" alt=""></a>
 				<div class="product__info">
 					<h3 class="product__name">Mishka</h3>
-					<p class="product__description">Интернет-магазин<br> вязаных игрушек</p>
+					<p class="product__description">Интернет-магазин вязаных игрушек</p>
 					<a href="" class="product__price">9 900 руб.</a>
 				</div>
 					</div><!--
@@ -143,7 +140,7 @@
 				<a href=""><img class="product__img" src="img/learn.jpg" alt=""></a>
 				<div class="product__info">
 					<h3 class="product__name">A plus</h3>
-					<p class="product__description">Лендинг курсов повышения<br> квалификации</p>
+					<p class="product__description">Лендинг курсов повышения квалификации</p>
 					<a href="" class="product__price">9 900 руб.</a>
 				</div>
 					</div><!--
@@ -151,19 +148,18 @@
 				<a href=""><img class="product__img" src="img/kraft.jpg" alt=""></a>
 				<div class="product__info">
 					<h3 class="product__name">Кваст</h3>
-					<p class="product__description">Промо-сайт производителя<br> крафтового кваса</p>
+					<p class="product__description">Промо-сайт производителя крафтового кваса</p>
 					<a href="" class="product__price">9 900 руб.</a>
 				</div>
 			</div>
 		</div>
 		<div class="pages">
-			<a href="" class="pages__active">1</a>
-			<a href="" class="pages__numbers">2</a>
-			<a href="" class="pages__numbers">3</a>
-			<a href="" class="pages__next">Следующая</a>
+			<a href="" class="pages__item pages__item-active">1</a>
+			<a href="" class="pages__item">2</a>
+			<a href="" class="pages__item">3</a>
+			<a href="" class="pages__item pages__item-next">Следующая</a>
 		</div>
 	</div>
-</div>
 </div>
 </section>
 <section>
@@ -171,9 +167,9 @@
 		<div class="container">
 			<div class="map__info">
 				<h3 class="map__head">Nёrds design studio</h3>
-				<p class="map__info-adress">191186, Санкт-Петербург,<br>  ул. Б. Конюшенная, д. 19/8</p>
+				<p class="map__info-adress">191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
 				<p class="map__info-telephone">тел. +7(812)275-75-75</p>
-				<a href="" class="first-button">Напишите нам</a>
+				<a href="" class="first-button-catalog">Напишите нам</a>
 			</div>
 		</div>
 	</div>
@@ -193,23 +189,51 @@
 				</a>
 			</div>
 			<div class="networks">
-				<p class="networks__p"><strong class="networks__strong">Давайте дружить, это выгодно!</strong><br>Скидка 10% для друзей из социальных сетей.</p>
+				<div class="networks__p">
+					<div class="networks__strong">Давайте дружить, это выгодно!</div>
+					<div class="networks__bottom">Скидка 10% для друзей из социальных сетей.</div>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<div class="footer__form container">
-	<div class="row">
-		<form class="modal-window">
-			<h3 class="modal-window__h3">Напишите нам</h3>
-			<label class="modal-window__label">Ваше имя:<input type="text" class="modal-window__input" placeholder="Представьтесь, пожалуйста" size="38px"></label>
-			<label class="modal-window__label">Ваш e-mail:<input type="text" class="modal-window__input" placeholder="Для отправки ответа" size="38px"></label>
-			<label class="modal-window__label">Текст письма:<textarea name="" id="" cols="89" rows="10" class="modal-window__textarea" placeholder="В свободной форме"></textarea></label>
-			<button class="modal-window__button">Отправить</button>
-		</form>				
-	</div>
-</div>
-
 </footer>
+<div class="modal-window">
+<form class="modal-form">
+		<h3 class="modal-form__h3">Напишите нам</h3>
+		<button class="modal-form__cross"><img src="img/cross.png" class="modal-form__img" alt=""></button>
+		<div class="modal-form__row row">
+			<div class="input-inline">
+				<label class="input-inline__label">Ваше имя:</label>
+				<input type="text" required="true" class="input-inline__field" placeholder="Представьтесь, пожалуйста">
+			</div><!--
+		 --><div class="input-inline">
+				<label class="input-inline__label">Ваш e-mail:</label>
+				<input type="e-mail" required="true" class="input-inline__field" placeholder="Для отправки ответа">
+			</div>
+		</div>
+		<div class="textarea">
+		<label class="modal-form__label label__textarea">Текст письма:</label>
+		<textarea name="" id="" cols="91" rows="6" class="textarea__field" required="true" placeholder="В свободной форме"></textarea>
+		</div>
+		<button class="modal-form__button">Отправить</button>
+	</form>				
+</div>
+<script>
+	var link = document.querySelector(".first-button-catalog");
+	var modal = document.querySelector(".modal-window");
+	var close = document.querySelector(".modal-form__cross");
+
+
+	link.addEventListener("click", function(event) {
+		event.preventDefault();
+		modal.classList.add("modal-window-show");
+
+	});
+	close.addEventListener("click", function(event) {
+		event.preventDefault();
+		modal.classList.remove("modal-window-show");
+	});
+</script>
 </body>
 </html>
